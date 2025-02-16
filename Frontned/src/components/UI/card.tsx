@@ -3,7 +3,7 @@ import { ShareIcon } from "../../icons/shareicon"
 import { Trash2 } from 'lucide-react';
 import axios from "axios";
 import { Backend_url } from "../../config";
-import {  useEffect,ReactNode,useState } from "react";
+import {  useEffect,ReactNode } from "react";
 
 interface Cardprops {
    id:string;

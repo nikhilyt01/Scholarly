@@ -31,7 +31,7 @@ export const Sidebar =({setFilter}:filterprop)=>{
             window.removeEventListener("resize",handleresize) ;
         };
 
-    },[])
+    },[width])
 
     //LogOut ka functinality
     const handleLogout = ()=>{

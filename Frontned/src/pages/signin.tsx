@@ -14,7 +14,7 @@ export  function Signin(){
     const UsernameRef= useRef<HTMLInputElement|null>(null);
     const PasswordRef = useRef<HTMLInputElement|null>(null);
 
-    async function handlesignin(e:React.FormEvent<HTMLInputElement>){
+    async function handlesignin(e:React.FormEvent<HTMLFormElement>){
         e.preventDefault();
         setLoading(true);
         const username = UsernameRef.current?.value;
