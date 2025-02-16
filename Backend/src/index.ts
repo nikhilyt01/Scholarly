@@ -35,15 +35,15 @@ type fun = Promise<any>
 const app=express()
 app.use(express.json());
 
-const allowedOrigins = [
-    "https://scholarly-bst6-qw9py43q8-nikhls-projects-f2bff93a.vercel.app", // Your deployed frontend URL
-    "http://localhost:5173", // Local development URL
-  ];
+// const allowedOrigins = [
+//     "scholarly-bst6-ekdzpe2yt-nikhls-projects-f2bff93a.vercel.app", // Your deployed frontend URL
+//     "http://localhost:5173", // Local development URL
+//   ];
   
   // CORS configuration
   app.use(
     cors({
-      origin: allowedOrigins, // Allow only these origins
+      origin: '*', // Allow only these origins
       methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
       credentials: true, // Allow credentials (cookies, tokens)
       allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
