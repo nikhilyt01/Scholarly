@@ -49,6 +49,7 @@ const allowedOrigins = [
       allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
     })
   );
+  app.options("*", cors());
 
 app.post("/api/v1/signup",async (req,res) => {
     //todo zod /// hash pasword
