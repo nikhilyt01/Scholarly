@@ -2,7 +2,7 @@
 
 Scholarly is a modern note-taking and sharing platform inspired by Brainly, YouTube, and Twitter. It allows users to create, share, and organize notes, collaborate with others, and interact through a seamless and intuitive interface. Built with a robust tech stack, Scholarly ensures security, scalability, and a great user experience.
 
-Features ✨
+# Features ✨
 User Authentication 🔐
 
 Secure sign-up and login using JWT (JSON Web Tokens).
