@@ -1,63 +1,62 @@
 # Scholarly 📚
 
-Scholarly is a modern note-taking and sharing platform inspired by Brainly, YouTube, and Twitter. It allows users to create, share, and organize notes, collaborate with others, and interact through a seamless and intuitive interface. Built with a robust tech stack, Scholarly ensures security, scalability, and a great user experience.
+**Scholarly** is a modern note-taking and sharing platform inspired by Brainly, YouTube, and Twitter. It allows users to create, share, and organize notes, collaborate with others, and interact through a seamless and intuitive interface. Built with a robust tech stack, Scholarly ensures security, scalability, and a great user experience.
 
-# Features ✨
-User Authentication 🔐
+---
 
-Secure sign-up and login using JWT (JSON Web Tokens).
+## Features ✨
 
-Password hashing with bcrypt for enhanced security.
+- **User Authentication** 🔐
+  - Secure sign-up and login using JWT (JSON Web Tokens).
+  - Password hashing with **bcrypt** for enhanced security.
 
-Note Management 📝
+- **Note Management** 📝
+  - Create, edit, and delete notes.
+  - Organize notes into categories or tags.
 
-Create, edit, and delete notes.
+- **Social Interaction** 🗣️
+  - Share notes publicly or with specific users.
+  
+- **Responsive Design** 📱
+  - Fully responsive and optimized for mobile, tablet, and desktop.
 
-Organize notes into categories or tags.
+---
 
-Social Interaction 🗣️
+## Tech Stack 🛠️
 
-Share notes publicly or with specific users.
+### Frontend
+- **React** ⚛️ - A JavaScript library for building user interfaces.
+- **TypeScript** 📜 - Adds static typing to JavaScript for better code quality.
+- **Vite** 🚀 - Fast and modern build tool for React.
+- **Tailwind CSS** 🎨 - Utility-first CSS framework for styling.
 
-Like, comment, and bookmark notes.
+### Backend
+- **Node.js** 🌐 - JavaScript runtime for building scalable server-side applications.
+- **Express** 🚂 - Web framework for Node.js.
+- **MongoDB** 🍃 - NoSQL database for storing user data and notes.
+- **Mongoose** 🦉 - MongoDB object modeling for Node.js.
 
-Search and Discovery 🔍
+### Authentication & Security
+- **JWT (JSON Web Tokens)** 🔑 - For secure user authentication.
+- **bcrypt** 🔒 - For password hashing and encryption.
 
-Search for notes by title, content, or tags.
+### Other Libraries
+- **Zod** 🛡️ - TypeScript-first schema validation.
+- **CORS** 🌍 - Middleware for enabling Cross-Origin Resource Sharing.
+- **Axios** 📡 - For making HTTP requests.
 
-Explore trending and popular notes.
+---
 
-Responsive Design 📱
+## Getting Started 🚀
 
-Fully responsive and optimized for mobile, tablet, and desktop.
+### Prerequisites
+- **Node.js** (v18 or higher)
+- **npm** (v9 or higher) or **yarn** (v1.22 or higher)
+- **MongoDB** (running locally or via a cloud service like MongoDB Atlas)
 
-Tech Stack 🛠️
-Frontend
-React ⚛️ - A JavaScript library for building user interfaces.
+### Installation
 
-TypeScript 📜 - Adds static typing to JavaScript for better code quality.
-
-Vite 🚀 - Fast and modern build tool for React.
-
-Tailwind CSS 🎨 - Utility-first CSS framework for styling.
-
-Backend
-Node.js 🌐 - JavaScript runtime for building scalable server-side applications.
-
-Express 🚂 - Web framework for Node.js.
-
-MongoDB 🍃 - NoSQL database for storing user data and notes.
-
-Mongoose 🦉 - MongoDB object modeling for Node.js.
-
-Authentication & Security
-JWT (JSON Web Tokens) 🔑 - For secure user authentication.
-
-bcrypt 🔒 - For password hashing and encryption.
-
-Other Libraries
-Zod 🛡️ - TypeScript-first schema validation.
-
-CORS 🌍 - Middleware for enabling Cross-Origin Resource Sharing.
-
-Axios 📡 - For making HTTP requests.
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/nikhilyt01/Scholarly.git
+   cd Scholarly
