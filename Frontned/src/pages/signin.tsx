@@ -68,10 +68,12 @@ export  function Signin(){
                       <Button  type="submit" loading={loading} text={loading?"Signing In..":"Sign In"}  variate="primary" size="md"fullwidth={true}  ></Button>
                     </div>
                   
+                 
                      <p className="text-sm text-center mt-4">
                       Don't have an account?
-                      <a href="/" className="text-blue-400  hover:underline"> Sign Up </a>
+                      <span onClick={()=>{navigate("/")}} className="text-blue-400  hover:underline"> Sign Up </span>
                      </p>
+                  
                   </form>
                 </div>
     </div>
