@@ -51,6 +51,10 @@ app.use(express.json());
   );
   app.options("*", cors());
 
+
+ app.get('/',(req:Request,res:Response) => {
+    res.status(200).json({'message': 'Hello from esportsbuzz backend service'});
+})
 app.post("/api/v1/signup",async (req,res) => {
     //todo zod /// hash pasword
     const {username,password} :signuprequest =req.body;
