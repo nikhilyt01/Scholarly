@@ -7,6 +7,7 @@ import {useState,useEffect} from "react";
 import { PanelRightOpen,Link2 } from 'lucide-react';
 import { Files,LogOut } from 'lucide-react';
 import { useNavigate } from "react-router-dom";
+import {Logout} from "./logoutpop";
 
  interface filterprop{
     setFilter:(filter:string)=> void;
@@ -15,6 +16,7 @@ import { useNavigate } from "react-router-dom";
 export const Sidebar =({setFilter}:filterprop)=>{
     const [open,setOpen ] =useState(window.innerWidth>1200);
     const [width,setWidth] =useState(window.innerWidth);
+    const [isopen,setIsopen]=useState(false);
     const navigate =useNavigate();
 
     useEffect(()=>{
@@ -34,15 +36,22 @@ export const Sidebar =({setFilter}:filterprop)=>{
     },[width])
 
     //LogOut ka functinality
-    const handleLogout = ()=>{
-        const confirm = window.confirm("Are You Sure You Want To LogOut ?");
-        if(confirm){
-            localStorage.removeItem("token");
-            navigate("/");
+    // const handleLogout = ()=>{
+    //     const confirm = window.confirm("Are You Sure You Want To LogOut ?");
+    //     if(confirm){
+    //         localStorage.removeItem("token");
+    //         navigate("/");
            
-            
+        
+    //     }
+    // }
 
-        }
+    const onClose=()=>{
+        setIsopen(false);
+    }
+    const onConfirm=()=>{
+        localStorage.removeItem("token");
+        navigate("/");
     }
 
 
@@ -71,8 +80,9 @@ export const Sidebar =({setFilter}:filterprop)=>{
             <SidebarItem text="WebSite" Icon={<Link2/>} open={open} onClick={()=>{setFilter("Website") ; } }/>
          </div>
          <div className="mt-20 ">
-            <SidebarItem text={"LogOut"} Icon={<LogOut/>} open={open} onClick={handleLogout} />
+            <SidebarItem text={"LogOut"} Icon={<LogOut/>} open={open} onClick={()=>setIsopen(true)} />
 
          </div>
+         <Logout open={isopen} onClose={onClose} onConfirm={onConfirm}/>
     </div>
 }

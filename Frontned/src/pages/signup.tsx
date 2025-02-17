@@ -70,7 +70,7 @@ export function Signup(){
                   
                      <p className="text-sm text-center mt-4">
                       Already have account?
-                      <a href="/" className="text-blue-400  hover:underline"> Log in </a>
+                      <span onClick={()=>{navigate("/")}} className="text-blue-400  hover:underline"> Log in </span>
                      </p>
                   </form>
                 </div>
