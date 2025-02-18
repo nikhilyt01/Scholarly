@@ -46,15 +46,21 @@
 - **Axios** 📡 - For making HTTP requests.
 
 ---
-### ScreenShots
-![collage img](./Frontned/proofimages/collage.jpg)
-
-![collage img](./Frontned/proofimages/main.png)
-
-![collage img](./Frontned/proofimages/secondary.png)
+### Screenshots 🎞️ 
+![collage img](./Frontend/proofimages/collage1.jpg)
+![collage img](./Frontend/proofimages/main.png)
+![collage img](./Frontend/proofimages/sec1.png)
 
 ---
+### Default Credentials
+ 🔑Username : signup432
+ 🔒Password : signup432
 
+---
+### Deployment 🌐
+ server is live at : https://scholarly-bst6.vercel.app/
+
+---
 
 ## Getting Started 🚀
 
