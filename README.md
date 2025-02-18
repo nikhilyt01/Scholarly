@@ -47,11 +47,11 @@
 
 ---
 ### ScreenShots
-![collage img](./Frontend/proofimages/collage.jpg)
+![collage img](./Frontned/proofimages/collage.jpg)
 
-![collage img](./Frontend/proofimages/main.png)
+![collage img](./Frontned/proofimages/main.png)
 
-![collage img](./Frontend/proofimages/secondary.png)
+![collage img](./Frontned/proofimages/secondary.png)
 
 ---
 
