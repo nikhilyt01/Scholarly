@@ -46,6 +46,15 @@
 - **Axios** 📡 - For making HTTP requests.
 
 ---
+### ScreenShots
+![collage img](./Frontend/proofimages/collage.jpg)
+
+![collage img](./Frontend/proofimages/main.png)
+
+![collage img](./Frontend/proofimages/secondary.png)
+
+---
+
 
 ## Getting Started 🚀
 
@@ -60,3 +69,4 @@
    ```bash
    git clone https://github.com/nikhilyt01/Scholarly.git
    cd Scholarly
+
