@@ -96,8 +96,9 @@ export function Dashboard() {
                     "Authorization": localStorage.getItem("token")
                   }
                  })
-                 const shareurl=`share this => ${Front_url}/brain/${response.data.hash}`;
-                 alert(shareurl)
+                 const shareurl=`${window.location.origin}/brain/${response.data.hash}`;
+                 await navigator.clipboard.writeText(shareurl);
+                 alert("Linked copied to Clipboard : "+ shareurl)
 
           }}
           startIcon={<ShareIcon size="lg"/>} size="md" variate="secondary" text="Share brain"></Button>
