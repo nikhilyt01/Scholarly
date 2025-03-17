@@ -89,6 +89,7 @@ export function Dashboard() {
              >
           </Button>
           <Button onClick={async ()=>{
+            try{
                 const response = await axios.post(`${Backend_url}/api/v1/brain/share`,{
                   share:true
                  },{
@@ -99,6 +100,10 @@ export function Dashboard() {
                  const shareurl=`${window.location.origin}/brain/${response.data.hash}`;
                  await navigator.clipboard.writeText(shareurl);
                  alert("Linked copied to Clipboard : "+ shareurl)
+                }catch(e){
+                  console.log("error while generating ",e);
+                  alert("Failed to Generate Link");
+            }
 
           }}
           startIcon={<ShareIcon size="lg"/>} size="md" variate="secondary" text="Share brain"></Button>
