@@ -13,7 +13,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 
 import axios from "axios"
-import { Backend_url, Front_url } from '../config';
+import { Backend_url } from '../config';
 import { RotateCcw } from 'lucide-react';
 
 interface content1 {
