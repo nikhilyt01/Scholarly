@@ -53,9 +53,8 @@ export const Sidebar =({setFilter}:filterprop)=>{
         localStorage.removeItem("token");
         navigate("/");
     }
-
-
-    return <div id="Sbar" className={`h-screen   bg-zinc-800 text-white  fixed top-0 left-0 pl-2 py-8 ${open ? "w-[20vw]" : "w-20"}`}>
+// if open i.e sidebar full w-64  else width minimal to only show icon and a
+    return <div id="Sbar" className={`h-screen   bg-zinc-800 text-white  fixed top-0 left-0 pl-2 py-8 ${open ? "left-0 w-64" : ""}   transition-all duration-300 ease-in-out `}>
         <div id="logo" className={"w-full px-2"}>
             <div className="flex items-center  justify-between h-10 mb-4">
 
@@ -72,7 +71,8 @@ export const Sidebar =({setFilter}:filterprop)=>{
 
 
         </div>
-        <div className={"pt-4  "}>
+        <div className={"pt-4  "}> 
+            {/* passed open don't renders icon  */}
             <SidebarItem text="All" Icon={<Text/>} open={open} onClick={()=>setFilter("all")} />
             <SidebarItem text="Twitter" Icon={<TwitterIcon/>} open={open} onClick={()=>{setFilter("Tweets"); }} />
             <SidebarItem text="Youtube" Icon={<YoutubeIcon/>} open={open} onClick={()=>{setFilter("Youtube") ; } }/>
