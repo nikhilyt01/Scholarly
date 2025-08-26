@@ -1,4 +1,5 @@
 import { NotebookPen, Database,Handshake } from 'lucide-react';
+import SpotlightCard from './spotlightCard';
 
 const features=[
     {
@@ -32,13 +33,13 @@ export const About = () =>{
                 </div>
                 <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
                     { features.map((items,i)=>(
-                        <div className="bg-zinc-700 rounded-lg p-6 shadow-lg"
+                        <SpotlightCard className='w-sm'
                         key={i}>
                             <items.logo className="h-10 w-10 text-blue-500 mb-4 mx-auto" />
                             <h3 className={"text-xl text-white font-semibold "}>{items.title}</h3>
                             <p className="text-zinc-300">{items.desc}</p>
 
-                        </div>
+                        </SpotlightCard>
 
                     )) }
                 </div>
