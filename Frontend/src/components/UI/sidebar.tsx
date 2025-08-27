@@ -58,9 +58,10 @@ export const Sidebar =({setFilter}:filterprop)=>{
         <div id="logo" className={"w-full px-2"}>
             <div className="flex items-center  justify-between h-10 mb-4">
 
-              {open && (<div className="flex items-center text-2xl md:text-3xl font-bold">
+              {open && (<div className="flex items-center text-2xl md:text-3xl  font-bold">
                           <div className="text-purple-600 pr-2">
                               <Logo />
+                              <br></br>
                            </div>
                               <div> Scholarly </div>
                         </div> 
