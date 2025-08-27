@@ -33,11 +33,11 @@ export const About = () =>{
                 </div>
                 <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
                     { features.map((items,i)=>(
-                        <SpotlightCard className='w-sm'
+                        <SpotlightCard className="pb-24"
                         key={i}>
                             <items.logo className="h-10 w-10 text-blue-500 mb-4 mx-auto" />
                             <h3 className={"text-xl text-white font-semibold "}>{items.title}</h3>
-                            <p className="text-zinc-300">{items.desc}</p>
+                            <p className="text-zinc-300 flex flex-wrap">{items.desc}</p>
 
                         </SpotlightCard>
 
