@@ -66,8 +66,8 @@ return (// Main container with relative position and min-height
             {/*Absolute Flow: Elements with position: absolute don't take up any space. 
             Other elements on the page will behave as if the absolute element isn't there, 
             and they'll "collapse" into its space.*/}
-            
-             <div className="absolute z-10 p-8 text-white">  {/* making this child relative fixed the overlay part */}
+
+             <div className="relative z-10 p-8 text-white">  {/* making this child relative fixed the overlay part */}
                 <div className="flex justify-end mb-4">
                     <button onClick={() => navigate("/")} className="text-white px-4 py-2 rounded-xl bg-blue-500 hover:bg-blue-600 shadow-lg shadow-cyan-500/50">
                         Go HOME
